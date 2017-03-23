@@ -1,0 +1,17 @@
+Nöjesfält.txt
+
+
+Du ska skriva ett program som simulerar ett nöjesfält. Använd objekt för att representera attraktionerna. En attraktion kan till exempel ha minimilängd (för att få åka), antal passagerare och magpirrfaktor. Attraktionen ska ha namn, den ska kunna göra reklam för sig, startas, stoppas och haverera.
+Skriv också ett huvudprogram där användaren får välja mellan tre olika attraktioner. Vald attraktion ska startas, kanske haverera (slumpa fram haverier) och stannas. När attraktionen är igång ska det synas på skärmen, till exempel med Iiiih från berg-och-dalbanan, skratt från lustiga huset och så vidare.
+Kravet för att bli godkänd är att du med ditt program visar att du kan skriva en egen klass med attribut och metoder, och använda den i ett program. Följ anvisningarna ovan men i övrigt har du fria händer!
+
+
+Programmet ska finnas i en fil med namnet Uppgift3.py. Följ den här mallen:
+# Programmeringsteknik webbkurs KTH inlämningsuppgift 3.
+# <Ditt namn>
+# <Datum>
+# <Kort beskrivning av vad programmet gör>
+
+<Programkod>
+Innan du skickar in programmet så ska du testa att det fungerar. Se till att du har provat alla klassens metoder, och fått se alla utskrifter som ditt program gör.
+När du har testat ditt program grundligt så går du till studentportalen och klickar dig fram till Inlämningsuppgift 3 och där lämnar du in filen Uppgift3.py. Observera att filen Uppgift3.py måste vara i textformat - vilket den automatiskt blir om du skapar den med hjälp av IDLE. Detta för att vi ska kunna prova och testköra ditt program.

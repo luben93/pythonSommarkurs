@@ -1,0 +1,71 @@
+Rondelet.txt
+
+I den här inlämningsuppgiften ska du skriva ett antal funktioner för att göra ett program som skapar en dikt av en inläst text. Programmet ska läsa in fyra meningar och sedan skriva ut texten uppdelad på följande rader:
+Textens fyra första ord med stora bokstäver
+En tom rad
+Textens fyra första ord
+Resten av första meningen
+Textens fyra första ord igen
+Andra meningen
+Tredje meningen
+Fjärde meningen
+Textens fyra första ord en sista gång
+Texten kommer då att likna en rondelet - en fransk diktform.
+Här är ett exempel på en körning:
+                DIKTAUTOMATEN
+
+Skriv in fyra meningar och få ut en rondelet!
+
+Skriv mening nr 1: Det fanns ingen fil när jag handlade på Konsum.
+Skriv mening nr 2: Bananerna var också slut.
+Skriv mening nr 3: Jag köpte bröd istället.
+Skriv mening nr 4: Nån sorts limpa med mycket fibrer.
+
+
+DET FANNS INGEN FIL
+
+Det fanns ingen fil
+när jag handlade på Konsum.
+Det fanns ingen fil
+Bananerna var också slut.
+Jag köpte bröd istället.
+Nån sorts limpa med mycket fibrer.
+Det fanns ingen fil
+Tips
+Medan du testar programmet kan du ersätta anropet av din inläsningsfunktion med tilldelningssatser. På det sättet slipper du skriva in fyra meningar varje gång du testkör ditt program!
+# För testning:
+sentence[0] = "Det fanns ingen fil när jag handlade på Konsum.
+sentence[1] = "Bananerna var också slut.
+sentence[2] = "Jag köpte bröd istället.
+sentence[3] = "Nån sorts limpa med mycket fibrer."
+Det finns en användbar metod i Python som heter split() med vars hjälp du kan dela upp en mening så att det blir en lista av enskilda ord. Här är ett exempel som visar hur man använder split():
+mening = "En ganska kort mening."
+lista = mening.split()
+
+lista har nu värdet ["En", "ganska", "kort", "mening."]
+Ifall vi vill skriva ut vår lista, så finns metoden join. Den funkar så här: <sträng>.join([lista]). <sträng> är den separator som ska skilja elementen i listan åt, det kan vara t.ex. radbrytning: "\n", mellanrum: " " eller punkter: ".."
+"".join(lista)   # ger " "Enganskakortmening."
+", ".join(lista) # ger  "En, ganska, kort, mening."
+För att göra om små bokstäver till stora i en sträng så kan du använda metoden upper():
+mening = "En ganska kort mening."
+ny_mening = mening.upper()
+
+ny_mening har nu värdet "EN GANSKA KORT MENING."
+Inlämning
+Programmet ska finnas i en fil med namnet Uppgift2.py. Följ den här mallen:
+# Programmeringsteknik webbkurs KTH inlämningsuppgift 2.
+# <Ditt namn>
+# <Datum>
+# <Kort beskrivning av vad programmet gör>
+
+<Programkod>
+Innan du skickar in programmet så ska du se till att där inte finns någon kodupprepning som kan åtgärdas med funktioner och slingor.
+När du har finputsat ditt program så går du till kursens förstasida. Under rubriken Examination hittar du Inlämningsuppgift 2 och där kan du lämna in filen Uppgift2.py. Observera att filen måste vara i textformat, vilket den automatiskt blir om du skapar den med hjälp av IDLE. Detta för att vi ska kunna prova och testköra ditt program.
+KONTROLL INNAN INLÄMNING:
+* Har du testat ditt program?
+* Har du namngivit dina variabler och funktioner väl?
+* Ser din körning ut som exemplen?
+* Använder du dig av inparametrar och returvärden?
+* Har du undvikit globala variabler?
+* Har du kommenterat din kod?
+* Har du undvikit kodupprepning?

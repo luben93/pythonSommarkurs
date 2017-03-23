@@ -1,0 +1,40 @@
+Kaprekar
+
+I den första inlämningsuppgiften ska du skriva och skicka in ditt första pythonprogram.
+Den indiske matematikern Dattaraya Ramchandra Kaprekar upptäckte att talet 6174 har en märklig egenskap. Välj ett fyrsiffrigt tal där de fyra siffrorna inte alla är likadana (t.ex 8082). Om man ordnar siffrorna från den största till den minsta så får vi ett nytt tal a (i detta fall 8820). Ordna sedan siffrorna från den minsta till den största så får vi ett annat tal b (i detta fall 0288). Beräkna nu differensen c=a−b=8820−0288=8532. Vi gör samma sak en gång till med det nya talet:
+8532−2358=6174
+Det märkliga är att denna process alltid kommer till 6174 förr eller senare. Om vi fortsätter får vi nämligen:
+7641−1467=6174
+Uppgiften består i att skriva ett program som givet ett ingångstal beräknar hur många iterationer det krävs innan ovanstående process kommer till 6174.
+Indata består av ett fyrsiffrigt tal. Utdata ska vara antalet iterationer som krävs för att genom ovanstående process komma fram till talet 6174 från det angivna talet.
+För att sortera ett fyrsiffrigt tal så kan du använda dig av följande kod:
+ 
+>>> n ='3712'
+>>> sorted(n)
+['1', '2', '3', '7']
+>>> sorted(n, reverse=True)
+['7', '3', '2', '1']
+
+>>> large = "".join(sorted(n, reverse=True))
+>>> large
+'7321'
+>>> 
+Programmet ska finnas i en fil med namnet Uppgift1.py. Följ den här mallen:
+# Programmeringsteknik webbkurs KTH inlämningsuppgift 1.
+# <Ditt namn>
+# <Datum>
+# <Kort beskrivning av vad programmet gör>
+
+<Programkod>
+
+Innan du skickar in programmet så ska du testa att det fungerar, fundera särskilt på om du hanterar talen 0001 och 6174 korrekt (varför är de luriga?).
+Exempel på output:
+Ange ett fyrsiffrigt tal: 1121
+Det tog 5 iterationer att nå 6174.
+(I den här uppgiften finns det inget krav på vad som ska hända om användaren matar in något annat än ett heltal. Om du vill så får du dock gärna försöka upptäcka felaktig inmatning och skriva ut lämpliga felmeddelanden.)
+
+När du har testat ditt program grundligt så går du till kursens förstasida. Under rubriken Examination hittar du Inlämningsuppgift 1 och där kan du lämna in filen Uppgift1.py. Observera att filen måste vara i textformat, vilket den automatiskt blir om du skapar den med hjälp av IDLE. Detta för att vi ska kunna prova och testköra ditt program.
+KONTROLL INNAN INLÄMNING:
+* Har du testat ditt program?
+* Har du namngivit dina variabler väl?
+* Har du kommenterat din kod?

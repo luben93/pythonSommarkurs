@@ -1,0 +1,52 @@
+Granskares namn: lucas persson
+Namn på den granskade: tobias brodd
+Granskad uppgift: 168 minröjning
+
+
+Användarvänlighet
+
+_ Informativa utskrifter / lättbegripligt grafiskt gränssnitt
+	enkel start men saknar alternativ t.ex: 
+			Vill du gå till en ruta eller vill du flagga en ruta? 
+		där gissade jag på g/f , förslag att lägga till såhär: 
+			Vill du gå till en ruta eller vill du flagga en ruta? (g/f)
+		och samma med:
+			Välj ruta i raden B: 
+		vilka alternativ har man
+_ Enkel inmatning
+	man borde kunna mata in bokstäver för rader, eller så borde det förklaras vilka siffror som gäller och vad de pekar på
+
+Programmerarvänlighet
+
+x Vettiga namn
+	ja
+x Kommentarer
+	ja oneliners på nästan alla klasser och funktioner
+x Konsekvent språk
+	ja svenska i kommentarer och UI och englska för namn
+x Konsekvent typografi
+	ja _ för mellanslag och stor bokstav i början på klasser
+x Felhantering
+	blir fel när man lägger till flagga och matar in bokstav istället för siffra, då blir A1 markerat med * 
+
+
+Strukturering
+
+x Lämplig uppdelning i funktioner
+x Lämplig uppdelning i klasser (ej obligatoriskt)
+x Temporära variabler så lokalt som möjligt
+_ Återanvändbara funktioner/klasser
+	en funktion för check och en för check_empty, vilket verkar vara i princip samma algoritm men med andra strängar och att i slutet kallar check på check_empty, där skulle den kunna ha kallat på check med ett option att lägga till de små ändringarna
+x In- och utdata till funktioner
+	en funktion som enligt kommentaren ska returera x returnerar inget, istället skriver ut x
+x Flexibelt/utbyggbart program
+	har I/O i flera klasser 
+x Ingen kodupprepning
+x Ingen hårdkodning
+
+
+Följande punkt är nödvändig (måste alltid åtgärdas)
+
+_ Uppfyller kraven i lydelsen
+	felhantering stör kraven lite och ifall man har gått på alla rutor utan att flagga vinner man inte,
+	förklara vilket input användaren förväntas skriva
